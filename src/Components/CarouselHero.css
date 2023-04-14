@@ -1,0 +1,36 @@
+
+
+.carousel-caption {
+    font-family: Cambria;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 80%;
+    text-align: left;
+    color: black;
+    max-width: 40rem;
+}
+  
+/* .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+    border: none;
+} */
+  
+.carousel-indicators .active {
+    background-color: #fff;
+}
+
+.banner {
+    margin-top: 65px;
+    /* margin-bottom: -40px; */
+}
+
+.Image {
+    /* margin-top: 10px; */
+}
+  

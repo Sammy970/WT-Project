@@ -1,0 +1,33 @@
+/* About section */
+.home-row {
+    /* background: url('/public/BGBG.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 5rem 2rem;
+    border-radius: 10px;
+}
+
+.home-row h2 {
+    color: black;
+    font-weight: 700;
+}
+
+.home-row p {
+    color: black;
+    margin-bottom: 2rem;
+    margin-top: auto;
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-weight: 550;
+    font-size: larger;
+    text-align: justify;
+}
+
+.right-img {
+    padding-left: 5%;
+}
+
+.right-img-class {
+    border-radius: 10px;
+    border-color: rgb(173, 14, 14);
+}

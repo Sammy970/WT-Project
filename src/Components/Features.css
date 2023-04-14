@@ -1,0 +1,40 @@
+.features-icon {
+    /* padding: 20px; */
+    /* padding-bottom: 20px; */
+}
+
+.features-text {
+    /* padding-bottom: 45px; */
+    font-size: small;
+}
+
+.feature_section .features-box {
+    background-color: transparent;
+    border: 1px solid rgb(139, 18, 200);
+    padding: 1rem 0;
+    transition: 1.3s;
+    /* transition: all 0.3s; */
+}
+
+.feature_section .features-box .features-icon {
+
+    background-color: var(--light-color);
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature_section .features-box h3 {
+    margin-top: 1rem;
+    color: var(--primary-text);
+}
+
+.feature_section .features-box:hover {
+    background-color: rgb(138, 71, 205);
+    transform: scale(1.1);
+    transition: 1.3s;
+    padding: 2rem 0;
+    color: white;
+}

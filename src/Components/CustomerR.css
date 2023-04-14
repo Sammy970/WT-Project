@@ -1,0 +1,54 @@
+/* 4.5 Testimonial */
+.CustomerR {
+    padding-bottom: 6rem;
+}
+
+
+.custo {
+    border: 3px solid rebeccapurple;
+    /* width: 70%; */
+}
+
+
+.CustomerR .carousel-indicators {
+    bottom: -5rem;
+}
+
+.CustomerR #testimonial-slider {
+    background-color: rebeccapurple;
+}
+
+.CustomerR .carousel-indicators button {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background-color: rebeccapurple;
+
+}
+
+.CustomerR .card {
+    /* background: url('/public/BGBG.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: right;
+    padding: 5rem 5rem 5rem 0;
+    border-radius: 0 .5rem .5rem 0;
+    border: 0.1rem solid transparent;
+}
+
+.CustomerR .profile-box {
+    padding: 1.875rem;
+    border-radius: .5rem 0 0 .5rem;
+}
+
+.CustomerR .profile-box img {
+    border-radius: .625rem 3.125rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.CustomerR .desc-box {
+    padding-left: 2.5rem;
+}
