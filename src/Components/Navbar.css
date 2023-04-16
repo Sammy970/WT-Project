@@ -22,10 +22,10 @@ nav {
 }
 
 .NavLink {
-  display: inline-block;
+  display: inline-block ;
   list-style: none;
 
-  padding: 0 10px;
+  /* padding: 0 10px; */
   margin: 0 20px;
   cursor: pointer;
   /* border: 2px solid rebeccapurple; */

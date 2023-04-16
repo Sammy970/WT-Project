@@ -24,6 +24,9 @@ const CardsGrid = () => {
 
     return (
         <>
+            <br /><br /><br /> <br />
+
+
             <Container>
                 <Cart />
                 <FilterForm />
@@ -35,6 +38,8 @@ const CardsGrid = () => {
                     ))}
                 </Row>
             </Container>
+
+            <br /><br /><br />
 
         </>
     );

@@ -1,11 +1,10 @@
 import React from 'react'
 
-import NavBar2 from "../Components/Navbar2"
+// import NavBar2 from "../Components/Navbar2"
 import CarouselHero from "../Components/CarousalHero";
 import FeaturesSection from "../Components/Features";
 import CustomerR from "../Components/CustomerR"
 import HomeAboutPage from "../Components/HomeAboutPage";
-import Footer from '../Components/Footer';
 
 // import FormComp from "../Components/FormComp";
 // import CardsGrid from "../Components/CardsGrid"
@@ -17,7 +16,7 @@ const HomePage = () => {
     
     return (
         <>
-            <NavBar2 />
+            {/* <NavBar2 /> */}
             <div className='Hero'>
                 <CarouselHero />
             </div>
@@ -30,7 +29,6 @@ const HomePage = () => {
             </div>
             <br/>
             <CustomerR />
-            <Footer />
         </>
     )
 }
