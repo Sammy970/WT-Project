@@ -11,7 +11,7 @@ const CardsGrid = () => {
 
     const [datas, setDatas] = useState([])
 
-    fetch('https://wt-backend.onrender.com/api/getData', {
+    fetch('https://wt-project-backend.onrender.com/api/getData', {
         method: 'POST',
     }).then(response => {
         if (!response.ok) {

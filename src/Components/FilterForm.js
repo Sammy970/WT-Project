@@ -17,7 +17,7 @@ const FilterForm = () => {
 
     const handleSubmit = () => {
         // Send selectedValues to backend server
-        fetch('https://wt-backend.onrender.com/api/submit', {
+        fetch('https://wt-project-backend.onrender.com/api/submit', {
             method: 'POST',
             body: JSON.stringify({ selectedValues }),
             headers: {
