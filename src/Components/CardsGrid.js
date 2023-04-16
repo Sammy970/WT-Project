@@ -3,6 +3,7 @@ import CardsComp from "./CardsComp";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Row, Col, Container } from 'react-bootstrap';
 import FilterForm from "./FilterForm";
+import Cart from "./Carts/Cart";
 
 
 const CardsGrid = () => {
@@ -24,11 +25,12 @@ const CardsGrid = () => {
     return (
         <>
             <Container>
+                <Cart />
                 <FilterForm />
                 <Row>
-                    {datas.map((card) => (
-                        <Col xs={6} md={3}  >
-                            <CardsComp cardImg={card.image} cardTitle={card.title} cardContent={card.desc} cardPrice={card.price} cardCategory={card.select} />
+                    {datas.map((card, index) => (
+                        <Col xs={6} md={3} key={index} >
+                            <CardsComp cardId={card._id} cardImg={card.image} cardTitle={card.title} cardContent={card.desc} cardPrice={card.price} cardCategory={card.select} />
                         </Col>
                     ))}
                 </Row>

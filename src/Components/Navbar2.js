@@ -52,6 +52,7 @@ const Navbar2 = () => {
                                     <Dropdown.Item href="/products" onClick={() => handleDropdownChange("gift-cards")}>Gift Cards</Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
+                            <Button variant="dark" href="/additems">Add Items</Button>
                         </Nav>
                         <Nav>
                             <Nav.Link className='text-end text-light'><span className='text'>Call Us!</span> <br /> 123456789</Nav.Link>

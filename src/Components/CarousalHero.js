@@ -1,7 +1,5 @@
 import { Carousel, Row, Col } from 'react-bootstrap';
-import './CarouselHero.css';
-
-import '../Components/CarouselHero.css'
+import './CarouselHero.css'
 
 const CarouselHero = () => {
     return (

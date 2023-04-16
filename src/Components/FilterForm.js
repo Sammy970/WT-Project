@@ -43,33 +43,33 @@ const FilterForm = () => {
                     <Offcanvas.Title>Offcanvas</Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radiobtn" id="all" onChange={() => handleCheckboxChange("all")} />
-                        <label class="form-check-label" for="all">
+                    <div className="form-check">
+                        <input className="form-check-input" type="radio" name="radiobtn" id="all" onChange={() => handleCheckboxChange("all")} />
+                        <label className="form-check-label" htmlFor="all">
                             Everything
                         </label>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radiobtn" id="sketch" onChange={() => handleCheckboxChange("sketch")} />
-                        <label class="form-check-label" for="sketch">
+                    <div className="form-check">
+                        <input className="form-check-input" type="radio" name="radiobtn" id="sketch" onChange={() => handleCheckboxChange("sketch")} />
+                        <label className="form-check-label" htmlFor="sketch">
                             Sketches & Paintings
                         </label>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radiobtn" id="crafts" onChange={() => handleCheckboxChange("crafts")} />
-                        <label class="form-check-label" for="crafts">
+                    <div className="form-check">
+                        <input className="form-check-input" type="radio" name="radiobtn" id="crafts" onChange={() => handleCheckboxChange("crafts")} />
+                        <label className="form-check-label" htmlFor="crafts">
                             Crafts
                         </label>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radiobtn" id="pottery" onChange={() => handleCheckboxChange("pottery")} />
-                        <label class="form-check-label" for="pottery">
+                    <div className="form-check">
+                        <input className="form-check-input" type="radio" name="radiobtn" id="pottery" onChange={() => handleCheckboxChange("pottery")} />
+                        <label className="form-check-label" htmlFor="pottery">
                             Pottery
                         </label>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radiobtn" id="gift-cards" onChange={() => handleCheckboxChange("gift-cards")} />
-                        <label class="form-check-label" for="gift-cards">
+                    <div className="form-check">
+                        <input className="form-check-input" type="radio" name="radiobtn" id="gift-cards" onChange={() => handleCheckboxChange("gift-cards")} />
+                        <label className="form-check-label" htmlFor="gift-cards">
                             Gift Cards
                         </label>
                     </div>

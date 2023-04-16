@@ -12,7 +12,9 @@ import Footer from '../Components/Footer';
 
 import '../Components/HomePage.css';
 
+
 const HomePage = () => {
+    
     return (
         <>
             <NavBar2 />

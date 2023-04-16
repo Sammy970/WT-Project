@@ -1,7 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, Badge } from 'react-bootstrap';
+import { CartContext } from './Carts/CartContext';
+
+
 function CardsComp(props) {
+  const { addToCart } = useContext(CartContext);
+
+  const handleAddToCart = () => {
+    // console.log(props.cardId)
+    const item = {
+      id: props.cardId,
+      title: props.cardTitle,
+      image: props.cardImg,
+      price: props.cardPrice
+    };
+    addToCart(item);
+  };
+
   return (
     <>
       <Card >
@@ -12,7 +28,7 @@ function CardsComp(props) {
           <Card.Text>{props.cardPrice}</Card.Text>
           <Badge bg="success">{props.cardCategory}</Badge>
         </Card.Body>
-        <button>Submit</button>
+        <button onClick={handleAddToCart}>Add to Cart</button>
       </Card>
     </>
   );

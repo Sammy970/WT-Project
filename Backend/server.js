@@ -18,18 +18,18 @@ const storage = multer.diskStorage({
     }
 });
 
-const upload = multer({ storage });
-
 
 const uri = 'mongodb+srv://Samyak970:Samyak970@data.a9ny5hi.mongodb.net/test'
 const dbName = 'testDb'
 const colName = 'testCol'
 
 const client = new MongoClient(uri);
+const upload = multer({ storage });
 
 app.use(cors());
 app.use(bodyParser.json());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+// app.use('/uploads', express.static('uploads'))
 
 // Define a route
 app.post('/api/data', upload.single('image'), async (req, res) => {
@@ -40,9 +40,10 @@ app.post('/api/data', upload.single('image'), async (req, res) => {
     const price = req.body.price;
     const file = req.file;
     const fileName = file.originalname;
-    // console.log(fileName);
+    console.log("Hello");
 
     app.locals.imageUrl = `${req.protocol}://${req.get('host')}/${file.path}`;
+    console.log(app.locals.imageUrl);
 
     // if(app.locals.selVal == crafts) {
 

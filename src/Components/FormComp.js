@@ -12,10 +12,7 @@ const FormComp = () => {
         price: '',
     })
 
-
-
     const [file, setFile] = useState(null);
-
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -66,7 +63,6 @@ const FormComp = () => {
     }
 
     // Name, Organization, Desc, Price, Image, Category
-
 
     return (
         <>
