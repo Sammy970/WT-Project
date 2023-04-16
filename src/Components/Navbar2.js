@@ -12,7 +12,7 @@ const Navbar2 = () => {
 
     const sendVal = (value) => {
 
-        fetch('http://localhost:5000/api/getSelection', {
+        fetch('https://wt-backend.onrender.com/api/getSelection', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

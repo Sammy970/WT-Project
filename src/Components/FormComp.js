@@ -30,7 +30,7 @@ const FormComp = () => {
 
         // console.log(formDataFinal);
 
-        fetch('http://localhost:5000/api/data', {
+        fetch('https://wt-backend.onrender.com/api/data', {
             method: 'POST',
             body: formDataFinal,
         })
