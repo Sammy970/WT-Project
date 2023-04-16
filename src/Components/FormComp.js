@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Form, Button, Container } from 'react-bootstrap'
 
+import './FormComp.css'
+
 // Name, Organization, Desc, Price, Image, Category
 
 const FormComp = () => {
@@ -66,55 +68,60 @@ const FormComp = () => {
 
     return (
         <>
-            <Container> <br />
-                <Form onSubmit={handleSubmit}>
-                    <Form.Group controlId="formFile" className="mb-3">
-                        <Form.Label>Upload Image</Form.Label>
-                        <Form.Control type="file" onChange={handleFileChange} />
-                    </Form.Group>
+            <br />
+            <br />
+            <div className='body'>
 
-                    <br />
+                <Container className='containsForm'>
+                    <Form onSubmit={handleSubmit}>
+                        <Form.Group className='Form.Group' controlId="formFile">
+                            <Form.Label className='Form.Label'>Upload an Image</Form.Label>
+                            <Form.Control type="file" onChange={handleFileChange} />
+                        </Form.Group>
 
-                    <Form.Group controlId="formTitle">
-                        <Form.Label>Art Title</Form.Label>
-                        <Form.Control type="text" name="title" value={formData.title} onChange={handleChange} />
-                    </Form.Group>
+                        <br />
 
-                    <br />
+                        <Form.Group className='Form.Group' controlId="formTitle">
+                            <Form.Label className='Form.Label'>Art Title</Form.Label>
+                            <Form.Control type="text" name="title" value={formData.title} onChange={handleChange} />
+                        </Form.Group>
 
-                    <Form.Group controlId="formDesc">
-                        <Form.Label>Short Description</Form.Label>
-                        <Form.Control type="text" name="desc" value={formData.desc} onChange={handleChange} />
-                    </Form.Group>
+                        <br />
 
-                    <br />
+                        <Form.Group className='Form.Group' controlId="formDesc">
+                            <Form.Label className='Form.Label'>Short Description</Form.Label>
+                            <Form.Control type="text" name="desc" value={formData.desc} onChange={handleChange} />
+                        </Form.Group>
 
-                    <Form.Group controlId="formCategory">
-                        <Form.Label>Select a value</Form.Label>
-                        <Form.Control as="select" name="select" value={formData.select} onChange={handleChange}>
-                            <option value="">Select an Category</option>
-                            <option value="Sketches and Paintings">Sketches and Paintings</option>
-                            <option value="Ornaments">Ornaments</option>
-                            <option value="Gift-Cards">Gift Cards</option>
-                            <option value="Pottery">Pottery</option>
-                            <option value="Crafts">Crafts</option>
-                        </Form.Control>
-                    </Form.Group>
+                        <br />
 
-                    <br />
+                        <Form.Group className='Form.Group' controlId="formCategory">
+                            <Form.Label className='Form.Label'>Select a value</Form.Label>
+                            <Form.Control as="select" name="select" value={formData.select} onChange={handleChange}>
+                                <option value="">Select an Category</option>
+                                <option value="Sketches and Paintings">Sketches and Paintings</option>
+                                <option value="Ornaments">Ornaments</option>
+                                <option value="Gift-Cards">Gift Cards</option>
+                                <option value="Pottery">Pottery</option>
+                                <option value="Crafts">Crafts</option>
+                            </Form.Control>
+                        </Form.Group>
 
-                    <Form.Group controlId="formPrice">
-                        <Form.Label>Price</Form.Label>
-                        <Form.Control type="text" name="price" value={formData.price} onChange={handleChange} />
-                    </Form.Group>
+                        <br />
 
-                    <br />
+                        <Form.Group className='Form.Group' controlId="formPrice">
+                            <Form.Label className='Form.Label'>Price</Form.Label>
+                            <Form.Control type="text" name="price" value={formData.price} onChange={handleChange} />
+                        </Form.Group>
 
-                    <Button variant="primary" type="submit">
-                        Submit
-                    </Button>
-                </Form>
-            </Container>
+                        <br />
+
+                        <Button className='submitBtn' variant="primary" type="submit">
+                            Submit
+                        </Button>
+                    </Form>
+                </Container>
+            </div>
         </>
     )
 }
