@@ -1,75 +1,35 @@
-import React from "react";
-import {
-    Box,
-    Container,
-    Row,
-    Column,
-    FooterLink,
-    Heading,
-} from "./FooterStyles";
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 
-const Footer = () => {
+import './Footer.css'
+
+function Footer() {
     return (
-
-        <>
-            <Box >
-                <Container>
-                    <Row>
-                        <Column>
-                            <Heading>About Us</Heading>
-                            <FooterLink href="#">Aim</FooterLink>
-                            <FooterLink href="#">Vision</FooterLink>
-                            <FooterLink href="#">Testimonials</FooterLink>
-                        </Column>
-                        <Column>
-                            <Heading>Services</Heading>
-                            <FooterLink href="#">Writing</FooterLink>
-                            <FooterLink href="#">Internships</FooterLink>
-                            <FooterLink href="#">Coding</FooterLink>
-                            <FooterLink href="#">Teaching</FooterLink>
-                        </Column>
-                        <Column>
-                            <Heading>Contact Us</Heading>
-                            <FooterLink href="#">Uttar Pradesh</FooterLink>
-                            <FooterLink href="#">Ahemdabad</FooterLink>
-                            <FooterLink href="#">Indore</FooterLink>
-                            <FooterLink href="#">Mumbai</FooterLink>
-                        </Column>
-                        <Column>
-                            <Heading>Social Media</Heading>
-                            <FooterLink href="#">
-                                <i className="fab fa-facebook-f">
-                                    <span style={{ marginLeft: "10px" }}>
-                                        Facebook
-                                    </span>
-                                </i>
-                            </FooterLink>
-                            <FooterLink href="#">
-                                <i className="fab fa-instagram">
-                                    <span style={{ marginLeft: "10px" }}>
-                                        Instagram
-                                    </span>
-                                </i>
-                            </FooterLink>
-                            <FooterLink href="#">
-                                <i className="fab fa-twitter">
-                                    <span style={{ marginLeft: "10px" }}>
-                                        Twitter
-                                    </span>
-                                </i>
-                            </FooterLink>
-                            <FooterLink href="#">
-                                <i className="fab fa-youtube">
-                                    <span style={{ marginLeft: "10px" }}>
-                                        Youtube
-                                    </span>
-                                </i>
-                            </FooterLink>
-                        </Column>
-                    </Row>
-                </Container>
-            </Box>
-        </>
+        <footer className="mt-5 bg-dark py-4">
+            <Container>
+                <Row>
+                    <Col md={4} className="text-center text-light text-md-left">
+                        <h4>Company Name</h4>
+                        <p>123 Main St.</p>
+                        <p>Anytown, USA 12345</p>
+                    </Col>
+                    <Col md={4} className="text-center text-light">
+                        <h4>Contact Us</h4>
+                        <p>Phone: (123) 456-7890</p>
+                        <p>Email: info@company.com</p>
+                    </Col>
+                    <Col md={4} className="text-center text-light text-md-right">
+                        <h4>Follow Us</h4>
+                        <a  href="/">Facebook</a>
+                        <br/><br/>
+                        <a  href="/">Twitter</a>
+                        <br/><br/>
+                        <a  href="/">Instagram</a>
+                    </Col>
+                </Row>
+            </Container>
+        </footer>
     );
-};
+}
+
 export default Footer;

@@ -11,9 +11,9 @@ const Cart = () => {
 
     return (
         <>
-            <h4>
-                <a href="/cart"><FontAwesomeIcon icon={faCartShopping} size="lg" /></a>
-                {cartItems.length} items are added
+            <h4 className="text-end">
+                <a href="/cart"><FontAwesomeIcon icon={faCartShopping} size="lg" style={{color:"rebeccapurple"}} /></a>
+                {cartItems.length} items
             </h4>
         </>
     );

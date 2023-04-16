@@ -4,17 +4,14 @@ import FormComp from './FormComp'
 import { Container } from 'react-bootstrap'
 
 const AddItems = () => {
-    return ( 
+    return (
         <>
-
-            
-                <br /><br /><br />
-                <Container>
+            <br /><br /><br />
+            <Container>
                 <FormComp />
                 <br /><br />
             </Container>
-            <br/>
-
+            <br />
         </>
     )
 }

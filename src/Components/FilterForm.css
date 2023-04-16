@@ -1,0 +1,23 @@
+.btn-class-filter-form {
+    background-color: blueviolet;
+    border: 2px solid black;
+    width: 15%;
+}
+
+.btn-class-filter-form:hover {
+    background-color: rebeccapurple;
+    border: 2px solid black;
+
+}
+
+.btn-class-filter {
+    background-color: blueviolet;
+    border: 2px solid black;
+    width: 40%;
+}
+
+.btn-class-filter:hover {
+    background-color: blueviolet;
+    border: 2px solid black;
+    width: 40%;
+}
