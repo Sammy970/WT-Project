@@ -8,7 +8,7 @@ const HomeAboutPage = () => {
     return (
         <>
             <Container>
-                <Row className='home-row'>
+                <Row id="HomeAbout" className='home-row'>
                     <Col xs={12} md={6}>
                         <h2>Discover artisanal crafts by seniors & the specially-abled.</h2>
                         <p>"At our company, we're committed to empowering local artisans and
@@ -22,7 +22,7 @@ const HomeAboutPage = () => {
                             our website.</p>
                         <br />
                         <div>
-                            <Button className='my-link' href='/test'>Read more..</Button>
+                            <Button className='my-link' href='/#HomeAbout'>Read more..</Button>
                         </div>
                     </Col >
                     <Col xs={12} md={6} className='right-img'>

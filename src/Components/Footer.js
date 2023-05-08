@@ -9,14 +9,14 @@ function Footer() {
             <Container>
                 <Row>
                     <Col md={4} className="text-center text-light text-md-left">
-                        <h4>Company Name</h4>
-                        <p>123 Main St.</p>
-                        <p>Anytown, USA 12345</p>
+                        <h4>RTist</h4>
+                        <p>VIT, Pune</p>
+                        <p>India, 400137</p>
                     </Col>
                     <Col md={4} className="text-center text-light">
                         <h4>Contact Us</h4>
-                        <p>Phone: (123) 456-7890</p>
-                        <p>Email: info@company.com</p>
+                        <p>Phone: (+91) 8843235636</p>
+                        <p>Email: info@rtist.com</p>
                     </Col>
                     <Col md={4} className="text-center text-light text-md-right">
                         <h4>Follow Us</h4>

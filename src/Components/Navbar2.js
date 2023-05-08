@@ -39,8 +39,8 @@ const Navbar2 = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mx-auto">
-                            <Button variant="dark" className='NavLink' href="/">Home</Button>
-                            <Button variant="dark" className='NavLink'>About</Button>
+                            <Button variant="dark" className='NavLink' href="/#">Home</Button>
+                            <Button variant="dark" href="/#HomeAbout" className='NavLink'>About</Button>
                             <Dropdown className="NavLink" as={ButtonGroup}>
                                 <Button variant="dark" href="/products" onClick={() => handleDropdownChange("all-category")}>Products</Button>
                                 <Dropdown.Toggle split variant="dark" id="dropdown-split-basic" />
@@ -55,7 +55,7 @@ const Navbar2 = () => {
                             <Button variant="dark"  className='NavLink' href="/additems">Add Items</Button>
                         </Nav>
                         <Nav>
-                            <Nav.Link className='text-end text-light'><span className='text'>Call Us!</span> <br /> 123456789</Nav.Link>
+                            <Nav.Link className='text-end text-light'><span className='text'>Call Us!</span> <br /> (+91) 8843235636</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
